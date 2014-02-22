@@ -61,8 +61,11 @@
 # pragma mark Helper
 
 - (void)customizeUI {
-    //Albert color
+    // Albert color
     UIColor *colorAlbert = [UIColor colorWithRed:113/255.0 green:82/255.0 blue:105/255.0 alpha:1.0];
+
+    // Customize status bar
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     // Customize NavBar
     [[UINavigationBar appearance] setBarTintColor:colorAlbert];
