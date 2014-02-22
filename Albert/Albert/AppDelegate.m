@@ -72,6 +72,8 @@
 
     UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Light" size:24.0f];
 
+    //[self.navigationController.navigationBar setTranslucent:YES];
+
     NSMutableDictionary *navBarTextAttributes = [NSMutableDictionary dictionaryWithCapacity:1];
     [navBarTextAttributes setObject:font forKey:NSFontAttributeName];
     [navBarTextAttributes setObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];

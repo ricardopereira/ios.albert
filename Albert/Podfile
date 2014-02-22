@@ -1,3 +1,5 @@
 pod 'MBProgressHUD', '~> 0.8'
 pod 'SBJson', '~> 4.0.0'
 pod 'ASIHTTPRequest'
+pod 'TSMessages'
+pod 'Canvas', '~> 0.1'

@@ -1,18 +1,18 @@
 //
-//  ScheduleViewController.m
+//  AccountViewController.m
 //  Albert
 //
-//  Created by Ricardo Pereira on 21/02/14.
+//  Created by Ricardo Pereira on 22/02/14.
 //  Copyright (c) 2014 Ricardo Pereira. All rights reserved.
 //
 
-#import "ScheduleViewController.h"
+#import "AccountViewController.h"
 
-@interface ScheduleViewController ()
+@interface AccountViewController ()
 
 @end
 
-@implementation ScheduleViewController
+@implementation AccountViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,10 +33,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)didTouchCloseButton:(id)sender {
-    [self.navigationController popViewControllerAnimated:TRUE];
 }
 
 @end

@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		47D6958969064807BD74703B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8428F7D0F6C74BA2854F05B1 /* libPods.a */; };
+		D710752A18B8E120002E1AC6 /* SchedulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D710752918B8E120002E1AC6 /* SchedulerViewController.m */; };
+		D710752D18B8E136002E1AC6 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D710752C18B8E136002E1AC6 /* AccountViewController.m */; };
+		D710753018B918D1002E1AC6 /* SchedulerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D710752F18B918D1002E1AC6 /* SchedulerCell.m */; };
+		D710753318B91971002E1AC6 /* SchedulerEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D710753218B91971002E1AC6 /* SchedulerEventCell.m */; };
+		D710753618B9235B002E1AC6 /* SchedulerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D710753518B9235B002E1AC6 /* SchedulerDetailViewController.m */; };
 		D73F8AC318AEC537008BD143 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC218AEC537008BD143 /* Foundation.framework */; };
 		D73F8AC518AEC537008BD143 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC418AEC537008BD143 /* CoreGraphics.framework */; };
 		D73F8AC718AEC537008BD143 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC618AEC537008BD143 /* UIKit.framework */; };
 		D73F8ACF18AEC537008BD143 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F8ACE18AEC537008BD143 /* main.m */; };
 		D73F8AD318AEC537008BD143 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F8AD218AEC537008BD143 /* AppDelegate.m */; };
-		D73F8AD918AEC537008BD143 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F8AD818AEC537008BD143 /* DashboardViewController.m */; };
 		D73F8ADB18AEC537008BD143 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73F8ADA18AEC537008BD143 /* Images.xcassets */; };
 		D73F8AE218AEC537008BD143 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AE118AEC537008BD143 /* XCTest.framework */; };
 		D73F8AE318AEC537008BD143 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC218AEC537008BD143 /* Foundation.framework */; };
 		D73F8AE418AEC537008BD143 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC618AEC537008BD143 /* UIKit.framework */; };
 		D73F8AEE18AEC537008BD143 /* AlbertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F8AED18AEC537008BD143 /* AlbertTests.m */; };
 		D77FA46418B6D71800767CAE /* Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77FA46318B6D71800767CAE /* Phone.storyboard */; };
-		D77FA46A18B6DBAA00767CAE /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D77FA46918B6DBAA00767CAE /* ScheduleViewController.m */; };
 		D77FA47218B6DCEC00767CAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77FA47018B6DCEC00767CAE /* Localizable.strings */; };
 		D7CF00CF18B842E500DFFA40 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CF00CE18B842E500DFFA40 /* NotificationsViewController.m */; };
 		D7CF00D218B8470000DFFA40 /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CF00D118B8470000DFFA40 /* SigninViewController.m */; };
@@ -40,6 +43,16 @@
 /* Begin PBXFileReference section */
 		62A0232291A74D238B44A1CC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8428F7D0F6C74BA2854F05B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D710752818B8E120002E1AC6 /* SchedulerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerViewController.h; sourceTree = "<group>"; };
+		D710752918B8E120002E1AC6 /* SchedulerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerViewController.m; sourceTree = "<group>"; };
+		D710752B18B8E136002E1AC6 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		D710752C18B8E136002E1AC6 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		D710752E18B918D1002E1AC6 /* SchedulerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerCell.h; sourceTree = "<group>"; };
+		D710752F18B918D1002E1AC6 /* SchedulerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerCell.m; sourceTree = "<group>"; };
+		D710753118B91971002E1AC6 /* SchedulerEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerEventCell.h; sourceTree = "<group>"; };
+		D710753218B91971002E1AC6 /* SchedulerEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerEventCell.m; sourceTree = "<group>"; };
+		D710753418B9235B002E1AC6 /* SchedulerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerDetailViewController.h; sourceTree = "<group>"; };
+		D710753518B9235B002E1AC6 /* SchedulerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerDetailViewController.m; sourceTree = "<group>"; };
 		D73F8ABF18AEC537008BD143 /* Albert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73F8AC218AEC537008BD143 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D73F8AC418AEC537008BD143 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,16 +62,12 @@
 		D73F8AD018AEC537008BD143 /* Albert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Albert-Prefix.pch"; sourceTree = "<group>"; };
 		D73F8AD118AEC537008BD143 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D73F8AD218AEC537008BD143 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D73F8AD718AEC537008BD143 /* DashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
-		D73F8AD818AEC537008BD143 /* DashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		D73F8ADA18AEC537008BD143 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D73F8AE018AEC537008BD143 /* AlbertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73F8AE118AEC537008BD143 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D73F8AE918AEC537008BD143 /* AlbertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlbertTests-Info.plist"; sourceTree = "<group>"; };
 		D73F8AED18AEC537008BD143 /* AlbertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbertTests.m; sourceTree = "<group>"; };
 		D77FA46318B6D71800767CAE /* Phone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Phone.storyboard; sourceTree = "<group>"; };
-		D77FA46818B6DBAA00767CAE /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
-		D77FA46918B6DBAA00767CAE /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		D77FA47118B6DCEC00767CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D77FA47318B6DCF800767CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D77FA47418B6DCFE00767CAE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -174,12 +183,18 @@
 		D77FA46518B6D9DB00767CAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D73F8AD718AEC537008BD143 /* DashboardViewController.h */,
-				D73F8AD818AEC537008BD143 /* DashboardViewController.m */,
-				D77FA46818B6DBAA00767CAE /* ScheduleViewController.h */,
-				D77FA46918B6DBAA00767CAE /* ScheduleViewController.m */,
 				D7CF00CD18B842E500DFFA40 /* NotificationsViewController.h */,
 				D7CF00CE18B842E500DFFA40 /* NotificationsViewController.m */,
+				D710752818B8E120002E1AC6 /* SchedulerViewController.h */,
+				D710752918B8E120002E1AC6 /* SchedulerViewController.m */,
+				D710753418B9235B002E1AC6 /* SchedulerDetailViewController.h */,
+				D710753518B9235B002E1AC6 /* SchedulerDetailViewController.m */,
+				D710752E18B918D1002E1AC6 /* SchedulerCell.h */,
+				D710752F18B918D1002E1AC6 /* SchedulerCell.m */,
+				D710753118B91971002E1AC6 /* SchedulerEventCell.h */,
+				D710753218B91971002E1AC6 /* SchedulerEventCell.m */,
+				D710752B18B8E136002E1AC6 /* AccountViewController.h */,
+				D710752C18B8E136002E1AC6 /* AccountViewController.m */,
 				D7CF00D018B8470000DFFA40 /* SigninViewController.h */,
 				D7CF00D118B8470000DFFA40 /* SigninViewController.m */,
 				D7CF00D318B8471300DFFA40 /* SignupViewController.h */,
@@ -251,6 +266,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ricardo Pereira";
 				TargetAttributes = {
+					D73F8ABE18AEC537008BD143 = {
+						DevelopmentTeam = JC9BAC9Y39;
+					};
 					D73F8ADF18AEC537008BD143 = {
 						TestTargetID = D73F8ABE18AEC537008BD143;
 					};
@@ -335,13 +353,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D710753018B918D1002E1AC6 /* SchedulerCell.m in Sources */,
 				D7CF00CF18B842E500DFFA40 /* NotificationsViewController.m in Sources */,
-				D73F8AD918AEC537008BD143 /* DashboardViewController.m in Sources */,
+				D710752A18B8E120002E1AC6 /* SchedulerViewController.m in Sources */,
 				D7CF00D218B8470000DFFA40 /* SigninViewController.m in Sources */,
+				D710753318B91971002E1AC6 /* SchedulerEventCell.m in Sources */,
+				D710752D18B8E136002E1AC6 /* AccountViewController.m in Sources */,
 				D73F8AD318AEC537008BD143 /* AppDelegate.m in Sources */,
 				D73F8ACF18AEC537008BD143 /* main.m in Sources */,
 				D7CF00D518B8471300DFFA40 /* SignupViewController.m in Sources */,
-				D77FA46A18B6DBAA00767CAE /* ScheduleViewController.m in Sources */,
+				D710753618B9235B002E1AC6 /* SchedulerDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,9 +481,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Albert/Albert-Prefix.pch";
 				INFOPLIST_FILE = "Albert/Albert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -475,10 +498,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Albert/Albert-Prefix.pch";
 				INFOPLIST_FILE = "Albert/Albert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "94CE7EFF-406E-4B3B-ABD8-5339BD183F5A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
