@@ -27,9 +27,12 @@
 {
     [super viewDidLoad];
     // Info
-    id object = [self.info objectForKey:@"thumbnail"];
+    id object = [self.info objectForKey:@"filesCount"];
+
+    //NSLog(@"%@",[[object class] description]);
+
     if (object != [NSNull null])
-        self.labelTest.text = [self.info objectForKey:@"thumbnail"];
+        self.labelTest.text = [NSString stringWithFormat:@"Files count: %@",(NSNumber*)[self.info objectForKey:@"filesCount"]];
     else
         self.labelTest.text = @"No data";
 }

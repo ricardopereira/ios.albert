@@ -42,6 +42,8 @@
 
     jsonArray = nil;
 
+    [self loadAll];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -76,22 +78,28 @@
 
     NSDictionary *current = [jsonArray objectAtIndex:indexPath.row];
     // Data
-    cell.textLabel.text = [current objectForKey:@"author"];
-    cell.name = [current objectForKey:@"id"];
+    cell.textLabel.text = [current objectForKey:@"name"];
+    cell.info = [current objectForKey:@"info"];
 
-    //NSLog(@"%@",[[[current objectForKey:@"thumbnail"] class] description]);
-    //NSLog(@"%@",[current objectForKey:@"thumbnail"]);
+    NSArray* files = [current objectForKey:@"files"];
 
-    cell.url = [current objectForKey:@"thumbnail"];
-    
+    //NSLog(@"%@",[[object class] description]);
+
+    cell.numberOfFiles = [files count];
+
     return cell;
 }
 
 - (IBAction)didTouchLoad:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    [self loadAll];
+}
+
+- (void)loadAll
+{
+    NSURL *url = [NSURL URLWithString:@"http://env-9374575.jelastic.lunacloud.com/apptest/schedule.php"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request setPostValue:@"call" forKey:@"app_id"];
+    [request setPostValue:@"call" forKey:@"getScheduler"];
     [request setDelegate:self];
     [request startAsynchronous];
 }
@@ -120,12 +128,11 @@
         if ([jsonObject isKindOfClass:[NSArray class]]) {
             // Type: array
             jsonArray = (NSArray *)jsonObject;
-            NSLog(@"jsonArray - %lu",(long)jsonArray.count);
         } else {
             // Type: dictionary
             NSDictionary *jsonDictionary = (NSDictionary*)jsonObject;
             // Type: array
-            jsonArray = [jsonDictionary objectForKey:@"posts"];
+            jsonArray = [jsonDictionary objectForKey:@"courses"];
             // When finished:
             [self.tableView reloadData];
         }

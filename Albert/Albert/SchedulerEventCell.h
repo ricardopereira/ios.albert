@@ -10,8 +10,7 @@
 
 @interface SchedulerEventCell : SchedulerCell
 
-@property (nonatomic, strong) NSString* name;
-@property (nonatomic, strong) NSString* url;
+@property (nonatomic, strong) NSString* info;
 @property (nonatomic) NSUInteger numberOfFiles;
 
 @end
