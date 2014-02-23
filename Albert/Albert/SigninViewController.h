@@ -19,6 +19,9 @@
 + (NSString*)getUser;
 + (void)setUser:(NSString*)newUser;
 
++ (NSString*)getEmail;
++ (void)setEmail:(NSString*)newEmail;
+
 @property (strong, nonatomic) IBOutlet UINavigationItem *barMain;
 
 @property (strong, nonatomic) IBOutlet UITextField *editUser;

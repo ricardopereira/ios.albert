@@ -12,6 +12,7 @@
 @interface AccountViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *labelUser;
+@property (strong, nonatomic) IBOutlet UILabel *labelEmail;
 @property (strong, nonatomic) IBOutlet CSAnimationView *viewUser;
 
 @end

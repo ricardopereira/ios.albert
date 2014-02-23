@@ -26,6 +26,7 @@
 
 static int connected = 0;
 static NSString* username;
+static NSString* email;
 
 + (int) getConnected
 {
@@ -44,6 +45,16 @@ static NSString* username;
 + (void)setUser:(NSString*)newUser {
     if (username != newUser) {
     	username = [newUser copy];
+    }
+}
+
++ (NSString*)getEmail {
+    return email;
+}
+
++ (void)setEmail:(NSString*)newEmail {
+    if (email != newEmail) {
+    	email = [newEmail copy];
     }
 }
 
@@ -102,7 +113,8 @@ static NSString* username;
 {
     NSURL *url = [NSURL URLWithString:@"http://env-9374575.jelastic.lunacloud.com/apptest/login.php"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request setPostValue:@"class" forKey:@"login"];
+    [request setPostValue:self.editUser.text forKey:@"user"];
+    [request setPostValue:self.editPassword.text forKey:@"pass"];
     [request setDelegate:self];
     [request startAsynchronous];
 }
@@ -127,6 +139,18 @@ static NSString* username;
         // JSON
         NSError *jsonError = nil;
         id jsonObject = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&jsonError];
+
+        if (jsonObject == nil || [jsonObject count] == 0) {
+            [TSMessage showNotificationWithTitle:NSLocalizedString(@"Login", nil)
+                                        subtitle:NSLocalizedString(@"Not invalid", nil)
+                                            type:TSMessageNotificationTypeError];
+            return;
+        }
+
+        NSArray *accountInfo = [jsonObject objectForKey:@"account"];
+
+        [SigninViewController setUser:[accountInfo valueForKey:@"name"]];
+        [SigninViewController setEmail:[accountInfo valueForKey:@"email"]];
 
         // Success
         [SigninViewController setConnected:1];

@@ -36,6 +36,9 @@
     self.labelUser.backgroundColor = colorAlbert;
     self.labelUser.textColor = [UIColor whiteColor];
     self.labelUser.text = [SigninViewController getUser];
+    self.labelEmail.backgroundColor = colorAlbert;
+    self.labelEmail.textColor = [UIColor whiteColor];
+    self.labelEmail.text = [SigninViewController getEmail];
 }
 
 - (void)didReceiveMemoryWarning
