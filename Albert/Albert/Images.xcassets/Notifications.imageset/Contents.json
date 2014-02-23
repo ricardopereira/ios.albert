@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Notifications.png"
+      "filename" : "my_notes_icn.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Notifications@2x.png"
+      "filename" : "my_notes_icn@2x.png"
     }
   ],
   "info" : {

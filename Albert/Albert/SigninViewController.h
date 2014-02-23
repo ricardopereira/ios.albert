@@ -16,6 +16,9 @@
 + (int) getConnected;
 + (void) setConnected:(int)value;
 
++ (int) getUserID;
++ (void) setUserID:(int)value;
+
 + (NSString*)getUser;
 + (void)setUser:(NSString*)newUser;
 

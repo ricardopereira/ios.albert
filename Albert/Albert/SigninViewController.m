@@ -25,6 +25,7 @@
 }
 
 static int connected = 0;
+static int userID = 0;
 static NSString* username;
 static NSString* email;
 
@@ -36,6 +37,16 @@ static NSString* email;
 + (void) setConnected:(int)value
 {
     connected = value;
+}
+
++ (int) getUserID
+{
+    return userID;
+}
+
++ (void) setUserID:(int)value
+{
+    userID = value;
 }
 
 + (NSString*)getUser {
@@ -149,6 +160,7 @@ static NSString* email;
 
         NSArray *accountInfo = [jsonObject objectForKey:@"account"];
 
+        [SigninViewController setUserID:[(NSString*)[accountInfo valueForKey:@"id"] intValue]];
         [SigninViewController setUser:[accountInfo valueForKey:@"name"]];
         [SigninViewController setEmail:[accountInfo valueForKey:@"email"]];
 
