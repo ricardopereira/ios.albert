@@ -49,6 +49,12 @@
     [self loadAll];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Notify
+    [[self navigationController] tabBarItem].badgeValue = [NSString stringWithFormat:@"%d", 0];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -70,11 +76,26 @@
 
     NSDictionary *current = [jsonArray objectAtIndex:indexPath.row];
     // Data
-    cell.textLabel.text = [current objectForKey:@"user"];
+    //cell.textLabel.text = [current objectForKey:@"user"];
     cell.info = [current objectForKey:@"info"];
     cell.course = [current objectForKey:@"course"];
     cell.filename = [current objectForKey:@"filename"];
     cell.datetime = [current objectForKey:@"datetime"];
+
+    UILabel *innerName = (UILabel *)[cell.contentView viewWithTag:10];
+    [innerName setText:[NSString stringWithFormat:@"User %@ added a file to:",[current objectForKey:@"user"]]];
+
+    UIColor *colorAlbert = [UIColor colorWithRed:101/255.0 green:44/255.0 blue:144/255.0 alpha:1.0];
+
+    UILabel *innerCourse = (UILabel *)[cell.contentView viewWithTag:11];
+    [innerCourse setText:cell.course];
+    innerCourse.textColor = colorAlbert;
+
+    UILabel *innerTime = (UILabel *)[cell.contentView viewWithTag:12];
+    [innerTime setText:cell.datetime];
+
+    UILabel *innerFile = (UILabel *)[cell.contentView viewWithTag:13];
+    [innerFile setText:cell.filename];
 
     return cell;
 }
@@ -116,6 +137,8 @@
             NSDictionary *jsonDictionary = (NSDictionary*)jsonObject;
             // Type: array
             jsonArray = [jsonDictionary objectForKey:@"notifications"];
+            // Notify
+            [[self navigationController] tabBarItem].badgeValue = [NSString stringWithFormat:@"%d",[jsonArray count]];
             // When finished:
             [self.tableView reloadData];
         }

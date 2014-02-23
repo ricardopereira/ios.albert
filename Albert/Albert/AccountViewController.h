@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CSAnimationView.h"
 
 @interface AccountViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *labelUser;
+@property (strong, nonatomic) IBOutlet CSAnimationView *viewUser;
 
 @end

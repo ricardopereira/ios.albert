@@ -8,6 +8,8 @@
 
 #import "AccountViewController.h"
 
+#import "SigninViewController.h"
+
 @interface AccountViewController ()
 
 @end
@@ -26,7 +28,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    UIColor *colorAlbert = [UIColor colorWithRed:101/255.0 green:44/255.0 blue:144/255.0 alpha:1.0];
+
+    self.view.backgroundColor = colorAlbert;
+    self.viewUser.backgroundColor = colorAlbert;
+    self.labelUser.backgroundColor = colorAlbert;
+    self.labelUser.textColor = [UIColor whiteColor];
+    self.labelUser.text = [SigninViewController getUser];
 }
 
 - (void)didReceiveMemoryWarning

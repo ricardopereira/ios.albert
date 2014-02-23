@@ -62,13 +62,40 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 7;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section
-    return [jsonArray count];
+    switch (section)
+    {
+        case 0:
+            return [jsonArray count];
+            break;
+        case 1:
+            return [jsonArray count];
+            break;
+        case 2:
+            return [jsonArray count];
+            break;
+        case 3:
+            return [jsonArray count];
+            break;
+        case 4:
+            return [jsonArray count];
+            break;
+        case 5:
+            return 0;
+            break;
+        case 6:
+            return 0;
+            break;
+            // ...
+        default:
+            return [jsonArray count];
+            break;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,7 +105,19 @@
 
     NSDictionary *current = [jsonArray objectAtIndex:indexPath.row];
     // Data
-    cell.textLabel.text = [current objectForKey:@"name"];
+    //cell.textLabel.text = [current objectForKey:@"name"];
+    UILabel *innerName = (UILabel *)[cell.contentView viewWithTag:10];
+    [innerName setText:[current objectForKey:@"name"]];
+
+    UIColor *colorAlbert = [UIColor colorWithRed:101/255.0 green:44/255.0 blue:144/255.0 alpha:1.0];
+
+    UILabel *innerInfo = (UILabel *)[cell.contentView viewWithTag:11];
+    [innerInfo setText:[current objectForKey:@"info"]];
+    innerInfo.textColor = colorAlbert;
+
+    UILabel *innerTime = (UILabel *)[cell.contentView viewWithTag:12];
+    [innerTime setText:[current objectForKey:@"time"]];
+
     cell.info = [current objectForKey:@"info"];
 
     NSArray* files = [current objectForKey:@"files"];
@@ -88,6 +127,40 @@
     cell.numberOfFiles = [files count];
 
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionName;
+    switch (section)
+    {
+        case 0:
+            sectionName = @"Segunda";
+            break;
+        case 1:
+            sectionName = @"Terça";
+            break;
+        case 2:
+            sectionName = @"Quarta";
+            break;
+        case 3:
+            sectionName = @"Quinta";
+            break;
+        case 4:
+            sectionName = @"Sexta";
+            break;
+        case 5:
+            sectionName = @"Sábado";
+            break;
+        case 6:
+            sectionName = @"Domingo";
+            break;
+            // ...
+        default:
+            sectionName = @"";
+            break;
+    }
+    return sectionName;
 }
 
 - (IBAction)didTouchLoad:(id)sender
