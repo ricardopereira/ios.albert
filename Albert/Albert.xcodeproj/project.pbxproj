@@ -13,6 +13,7 @@
 		D710753018B918D1002E1AC6 /* SchedulerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D710752F18B918D1002E1AC6 /* SchedulerCell.m */; };
 		D710753318B91971002E1AC6 /* SchedulerEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D710753218B91971002E1AC6 /* SchedulerEventCell.m */; };
 		D710753618B9235B002E1AC6 /* SchedulerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D710753518B9235B002E1AC6 /* SchedulerDetailViewController.m */; };
+		D710753918B95B47002E1AC6 /* FileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D710753818B95B47002E1AC6 /* FileCell.m */; };
 		D73F8AC318AEC537008BD143 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC218AEC537008BD143 /* Foundation.framework */; };
 		D73F8AC518AEC537008BD143 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC418AEC537008BD143 /* CoreGraphics.framework */; };
 		D73F8AC718AEC537008BD143 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC618AEC537008BD143 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 		D710753218B91971002E1AC6 /* SchedulerEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerEventCell.m; sourceTree = "<group>"; };
 		D710753418B9235B002E1AC6 /* SchedulerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerDetailViewController.h; sourceTree = "<group>"; };
 		D710753518B9235B002E1AC6 /* SchedulerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerDetailViewController.m; sourceTree = "<group>"; };
+		D710753718B95B47002E1AC6 /* FileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCell.h; sourceTree = "<group>"; };
+		D710753818B95B47002E1AC6 /* FileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCell.m; sourceTree = "<group>"; };
 		D73F8ABF18AEC537008BD143 /* Albert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73F8AC218AEC537008BD143 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D73F8AC418AEC537008BD143 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,6 +196,8 @@
 				D710752F18B918D1002E1AC6 /* SchedulerCell.m */,
 				D710753118B91971002E1AC6 /* SchedulerEventCell.h */,
 				D710753218B91971002E1AC6 /* SchedulerEventCell.m */,
+				D710753718B95B47002E1AC6 /* FileCell.h */,
+				D710753818B95B47002E1AC6 /* FileCell.m */,
 				D710752B18B8E136002E1AC6 /* AccountViewController.h */,
 				D710752C18B8E136002E1AC6 /* AccountViewController.m */,
 				D7CF00D018B8470000DFFA40 /* SigninViewController.h */,
@@ -361,6 +366,7 @@
 				D710752D18B8E136002E1AC6 /* AccountViewController.m in Sources */,
 				D73F8AD318AEC537008BD143 /* AppDelegate.m in Sources */,
 				D73F8ACF18AEC537008BD143 /* main.m in Sources */,
+				D710753918B95B47002E1AC6 /* FileCell.m in Sources */,
 				D7CF00D518B8471300DFFA40 /* SignupViewController.m in Sources */,
 				D710753618B9235B002E1AC6 /* SchedulerDetailViewController.m in Sources */,
 			);
