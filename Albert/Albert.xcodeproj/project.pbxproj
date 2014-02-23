@@ -24,6 +24,7 @@
 		D73F8AE318AEC537008BD143 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC218AEC537008BD143 /* Foundation.framework */; };
 		D73F8AE418AEC537008BD143 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F8AC618AEC537008BD143 /* UIKit.framework */; };
 		D73F8AEE18AEC537008BD143 /* AlbertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F8AED18AEC537008BD143 /* AlbertTests.m */; };
+		D74DB78218B9981000EAE78F /* NotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D74DB78118B9981000EAE78F /* NotificationCell.m */; };
 		D77FA46418B6D71800767CAE /* Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77FA46318B6D71800767CAE /* Phone.storyboard */; };
 		D77FA47218B6DCEC00767CAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77FA47018B6DCEC00767CAE /* Localizable.strings */; };
 		D7CF00CF18B842E500DFFA40 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CF00CE18B842E500DFFA40 /* NotificationsViewController.m */; };
@@ -70,6 +71,8 @@
 		D73F8AE118AEC537008BD143 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D73F8AE918AEC537008BD143 /* AlbertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlbertTests-Info.plist"; sourceTree = "<group>"; };
 		D73F8AED18AEC537008BD143 /* AlbertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbertTests.m; sourceTree = "<group>"; };
+		D74DB78018B9981000EAE78F /* NotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCell.h; sourceTree = "<group>"; };
+		D74DB78118B9981000EAE78F /* NotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCell.m; sourceTree = "<group>"; };
 		D77FA46318B6D71800767CAE /* Phone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Phone.storyboard; sourceTree = "<group>"; };
 		D77FA47118B6DCEC00767CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D77FA47318B6DCF800767CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 			children = (
 				D7CF00CD18B842E500DFFA40 /* NotificationsViewController.h */,
 				D7CF00CE18B842E500DFFA40 /* NotificationsViewController.m */,
+				D74DB78018B9981000EAE78F /* NotificationCell.h */,
+				D74DB78118B9981000EAE78F /* NotificationCell.m */,
 				D710752818B8E120002E1AC6 /* SchedulerViewController.h */,
 				D710752918B8E120002E1AC6 /* SchedulerViewController.m */,
 				D710753418B9235B002E1AC6 /* SchedulerDetailViewController.h */,
@@ -362,6 +367,7 @@
 				D7CF00CF18B842E500DFFA40 /* NotificationsViewController.m in Sources */,
 				D710752A18B8E120002E1AC6 /* SchedulerViewController.m in Sources */,
 				D7CF00D218B8470000DFFA40 /* SigninViewController.m in Sources */,
+				D74DB78218B9981000EAE78F /* NotificationCell.m in Sources */,
 				D710753318B91971002E1AC6 /* SchedulerEventCell.m in Sources */,
 				D710752D18B8E136002E1AC6 /* AccountViewController.m in Sources */,
 				D73F8AD318AEC537008BD143 /* AppDelegate.m in Sources */,
