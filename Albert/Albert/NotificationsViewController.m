@@ -8,6 +8,7 @@
 
 #import "NotificationsViewController.h"
 #import "NotificationCell.h"
+#import "SigninViewController.h"
 
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
@@ -42,7 +43,8 @@
     jsonArray = nil;
 
     // Show login
-    //[self performSegueWithIdentifier:@"showLogin" sender:self];
+    if ([SigninViewController getConnected] == 0)
+        [self performSegueWithIdentifier:@"showLogin" sender:self];
 
     [self loadAll];
 }
@@ -89,13 +91,13 @@
 {
     if (request.responseStatusCode == 400) {
         // 400
-        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Scheduler", nil)
+        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Notification", nil)
                                     subtitle:NSLocalizedString(@"Invalid code", nil)
                                         type:TSMessageNotificationTypeError];
     }
     else if (request.responseStatusCode == 403) {
         // 403
-        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Scheduler", nil)
+        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Notification", nil)
                                     subtitle:NSLocalizedString(@"Code already used", nil)
                                         type:TSMessageNotificationTypeError];
     }
@@ -120,7 +122,7 @@
     }
     else {
         // Unexpected
-        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Scheduler", nil)
+        [TSMessage showNotificationWithTitle:NSLocalizedString(@"Notification", nil)
                                     subtitle:NSLocalizedString(@"Unexpected error", nil)
                                         type:TSMessageNotificationTypeError];
     }
